@@ -4,9 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Welcome to Real time Chat!</title>
+	<title>Real time Chat!</title>
+	<script src="/chat.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<style>
+		#content {
+			width: 500px;
+			height: 300px;
+			margin: 0 0 20px 0;
+			border: solid 1px #999;
+			overflow-y: scroll;
+		}
+		.controls {
+			width: 350px;
+		}
+	</style>
 </head>
 <body>
 	<h2>I am default page</h2>
+	<div id="content"></div>
+	<div class="controls">
+		<input type="text" id="field" />
+		<input type="button" value="send" id="send" />
+	</div>
 </body>
 </html>
